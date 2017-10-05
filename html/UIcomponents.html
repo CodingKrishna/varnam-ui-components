@@ -3,9 +3,9 @@
 <head>
 	<title>UI Components</title>
 	<link rel="stylesheet" type="text/css" href="core.css">
-	<link rel="stylesheet" type="text/css" href="sample.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" type="text/css" href="color.css">
-	<script src="sample.js"></script>
+	<script src="script.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -21,18 +21,17 @@
 					    <li><a href="#tabs">Tabs</a></li>
 					   	<li><a href="#badges">Badges</a></li>
 					    <li><a href="#spinners">Spinners</a></li>
-					    <li><a href="#buttons">popups</a></li>
-					    <li><a href="#">PrograssBar</a></li>
-					   	<li><a href="#buttons">Accordion</a></li>
-					    <li><a href="#spinners">Courosal</a></li>
-					    <li><a href="#">ModelDialog</a></li>
-					   	<li><a href="#buttons">Pagination</a></li>
-					    <li><a href="#spinners">BrudComes</a></li>
-					    <li><a href="#">NavBars</a></li>
-					   	<li><a href="#buttons">Cards</a></li>
-					    <li><a href="#spinners">Pannels</a></li>
-					    <li><a href="#buttons">Cards</a></li>
-					    <li><a href="#spinners">Pannels</a></li>
+					    <li><a href="#popup">Popup</a></li>
+					    <li><a href="#PrograssBar">PrograssBar</a></li>
+					   	<li><a href="#Accordion">Accordion</a></li>
+					    <li><a href="#coursoel">coursoel </a></li>
+					    <li><a href="#ModelDialogue">ModelDialogue</a></li>
+					   	<li><a href="#Pagination">Pagination</a></li>
+					    <li><a href="#Breadcrumb">BreadCumbs</a></li>
+					    <li><a href="#Navbar">NavBars</a></li>
+					   	<li><a href="#Cards">Cards</a></li>
+					    <li><a href="#Pannels">Pannels</a></li>
+					    <li><a href="#Toster">Toster</a></li>
 					  </ul>
 				</nav>
 			</div>
@@ -41,8 +40,8 @@
 				<!--HTML Buttons Code-->
 
 				<div id="buttons" class="col-md-12 col-xs-12 btn-sec">
-							<h1>BUTTONS</h1>
-					<div class="container">
+							<h1 class="txt-cntr">BUTTONS</h1>
+					<div class="btn-container pad-cls">
 				        <div class="col-md-12 col-xs-12 cls-shadow cls-height">
 				            <h3>ColorButtons</h3>
 				            <button class="btn-prop red-clr">Red</button>
@@ -95,7 +94,9 @@
 							
 				<!-- HTML Tabs-->
 
-				<div id="tabs" class="col-md-12 col-xs-12 tab-sec ">
+				<div id="tabs" class="col-md-12 col-xs-12 cls-shadow tab-sec">
+						<h1 class="txt-cntr">Tabs</h1>
+				<div  class="col-md-12 col-xs-12 pad-cls">
 						<div class="tabs">
 						  <ul>
 							<li class="link" id="tab1" onclick= "openTab('phani')">Phani</li>
@@ -138,11 +139,12 @@
 							  <p>From:USA
 							</div>
 					</div>
-
+					</div> 
 					<!--  HTML badges --> 
 
 					<div id="badges" class="col-md-12 col-xs-12 comp-sec">
-						<div class="bdg-container">
+							<h1 class="txt-cntr">Badges</h1>
+						<div class="bdg-container pad-cls">
 							<div class="col-md-12 col-xs-12 -clsshadow ">
 								<h3>Badge Sizes</h3> 
 								<div id="badg1">
@@ -184,8 +186,11 @@
 							</div>
 							</div>
 					</div>
+
 					<!--- Spinners-->
-						<div id="#spinners" class="col-md-12 col-xs-12 spinner-sec">
+						<div id="spinners" class="col-md-12 col-xs-12 spinner-sec">
+							<h1 class="txt-cntr">Spinners</h1>
+						 <div class="col-md-12 col-xs-12 cls-shadow pad-cls">
 							<h3>Spinner</h3>
 							<div class="spinner">
 
@@ -215,27 +220,31 @@
 									<div class="ball"></div>
 								</div>
 					  		</div>
+					  	</div>
 					</div>
 
 					<!--PopUp-->
 
-					<div class="col-md-12 col-xs-12 pop-sec">
+					<div  id="popup" class="col-md-12 col-xs-12 pop-sec">
 						<div class="col-md-4 col-xs-6 show-pop">
 				            <button class="btn-pop"  onclick="showPop()">showpopup</button>
 				        </div>
 				        <div class="overlay" id="show">
-				        	 <div class="popup" id="showpop">
-				            <h2>Are You Sure </h2>
-				            <button class="cls-btn"title="close" onclick="hidePop()"><i class="fa fa-times" aria-hidden="true"></i></button>
-				            <button class="yes-btn1" onclick="hidePop()" id="">Yes</button>
-				            <button class="no-btn2" onclick="hidePop()" id="">NO</button>
-				        </div>
+					        <div class="popup" id="showpop">
+					            <h2>Are You Sure </h2>
+					            <button class="cls-btn"title="close" onclick="hidePop()"><i class="fa fa-times" aria-hidden="true"></i></button>
+					            <button class="yes-btn1" onclick="hidePop()" id="">Yes</button>
+					            <button class="no-btn2" onclick="hidePop()" id="">NO</button>
+					        </div>
 
 				        </div>
 					</div>
-					<div class="col-md-12 col-xs-12">
-						<h1>PrograssBars</h1>
-            				<div class="prg_bars">
+
+					<!--prograssBars-->
+
+					<div id="PrograssBar" class="col-md-12 col-xs-12">
+						<h1 class="txt-cntr" >PrograssBars</h1>
+            				<div class="prg_bars pad-cls">
 								<p>PrograssBar</p>
 									<div class="outerborder">
 										<div class="innerbox">
@@ -262,8 +271,320 @@
 								</div>
 							</div>
 					</div>
-			</div>
+				</div>
+
+				<!--- Accordion-->
+
+				<div id="Accordion" class="col-md-12 col-xs-12 acc-sec cls-shadow">
+						<h1 class="txt-cntr">Accordion</h1>
+			          <div class=" col-md-12 col-xs-12 acc-pro">
+			              <h2>Accordion with symbols</h2>
+			              <button class="accordion">Section 1</button>
+			              <div class="acc-panel">
+			                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			              </div>
+			              <button class="accordion">Section 2</button>
+			              <div class="acc-panel">
+			                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			              </div>
+			              <button class="accordion">Section 3</button>
+			              <div class="acc-panel">
+			                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			              </div>
+            		</div>
+        		</div>
+
+        		<!---  coursoel -->
+
+        		<div id="coursoel" class="col-md-12 col-xs-12 acc-sec cls-shadow">
+        			<h1 class="txt-cntr">coursoel</h1>
+        			<div class="col-md-12 col-xs-12">
+        				<div class="slideShow">
+							 <img class="slides" src="../images/html.png" style="width:100%;">
+							 <img class="slides" src="../images/css.jpg" style="width:100%;">
+							 <img class="slides" src="../images/javascript.jpg" style="width:100%;">
+						     <img class="slides" src="../images/Angular.jpg" style="width:100%;">
+						     <button class="slide-btn left-btn" onclick="slideImages(-1)">&#10094;</button>
+							 <button class="slide-btn right-btn" onclick="slideImages(1)">&#10095;</button>
+						</div>
+        			</div>
+        		</div>
+
+        		<!--- Model Dialogue -->
+
+        		<div id="ModelDialogue" class="col-md-12 col-xs-12 pop-sec cls-shadow"">
+                	<div class="col-md-4 col-xs-6 show-pop">
+                    	<button class="btn-showDlg"  onclick="showDialogue()">ModelDialogue</button>
+                    </div>
+                    	<div class="overlay-Model" id="showModel">
+                            <div class="popupBox"" id="showDialogue">
+	                            <h2>Content </h2>
+		                            <button class="cls-btn"title="close" onclick="hideDialogue()"><i class="fa fa-times" aria-hidden="true"></i></button>
+		                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		                            </p>  
+                        	</div>
+
+                        </div>
+                    </div>
+
+                    <!--- Pagination -->
+                    <div id="Pagination" class="col-md-12 col-xs-12 pag-sec cls-shadow">
+                    		<h1 class="txt-cntr">Pagination</h1>
+
+                    	<div class="pad-cls">
+                    	<div class="col-md-12 col-xs-12 border-shw pag-height">
+						        <h2>Simple Pagination</h2>
+						        <div class="pagination">
+						            <a href="#">&laquo;</a>
+						            <a href="#">1</a>
+						            <a href="#">2</a>
+						            <a href="#">3</a>
+						            <a href="#">4</a>
+						            <a href="#">5</a>
+						            <a href="#">6</a>
+						            <a href="#">&raquo;</a>
+						        </div>
+						    </div>
+						  <div class="col-md-12 col-xs-12 border-shw pag-height">
+						        <h2>Hover pagination</h2>
+						        <div class="pagination2">
+						            <a href="#">&laquo;</a>
+						            <a href="#">1</a>
+						            <a class="active" href="#">2</a>
+						            <a href="#">3</a>
+						            <a href="#">4</a>
+						            <a href="#">5</a>
+						            <a href="#">6</a>
+						            <a href="#">&raquo;</a>
+						       </div>  
+						  </div>
+						<div class="col-md-12 col-xs-12 border-shw pag-height">
+						       <h2>Pagination with Borders</h2>
+						        <div class="pagination3">
+						            <a href="#">&laquo;</a>
+						            <a href="#">1</a>
+						            <a href="#" >2</a>
+						            <a href="#">3</a>
+						            <a href="#">4</a>
+						            <a href="#">5</a>
+						            <a href="#">6</a>
+						            <a href="#">&raquo;</a>
+						      </div>
+						</div>
+						<div class="col-md-12 col-xs-12 border-shw pag-height">
+						    <h2>Pagination with Margins</h2>
+						    <div class="pagination4">
+						        <a href="#">&laquo;</a>
+						        <a href="#">1</a>
+						        <a href="#">2</a>
+						        <a href="#">3</a>
+						        <a href="#">4</a>
+						        <a href="#">5</a>
+						        <a href="#">6</a>
+						        <a href="#">&raquo;</a>
+						    </div>
+						</div>
+						</div>
+                  </div>
+
+                  <!-- Breadcrumbs -->
+
+                  <div id="Breadcrumb" class="col-md-12 col-xs-12 bred-sec cls-shadow">
+                  			<h1 class="txt-cntr">Breadcrumbs</h1>
+                  		<div class="brd-cls pad-cls">
+								<ul class="breadcrumb">
+  									<li><a href="#">Home</a></li>
+  									<li><a href="#">AboutUs</a></li>
+  									<li><a href="#">Carrer</a></li>
+  									<li><a href="#">Intro</a></li>
+								</ul>
+						</div>
+                  </div>
+
+                  <!--- Navbars -->
+
+                  <div  id="Navbar" class="col-md-12 col-xs-12 cls-shadow">
+                  		<h1 class="txt-cntr">NavBars</h1>
+                  		<div class="pad-cls">
+							<div class="">
+								<h3>VerticalNavBar</h3>
+						  			<nav class="">
+						  				<ul class="ver-nav">
+									  		<li><a href="#">Home</a></li>
+									  		<li><a href="#">About</a></li>
+									  		<li><a href="#">Carries</a></li>
+									  		<li><a href="#">Contact</a></li>
+									  		<li><a href="#">News</a></li>
+						  				</ul>
+						  			</nav>
+						  	</div>
+						  	<div class="">
+						  		<h3>HarizontalNavBar</h3>
+						  		<nav class="">
+						  			<ul class="har-nav">
+						  				<li><a href="#">Home</a></li>
+						  				<li><a href="#">About</a></li>
+						  				<li><a href="#">Carries</a></li>
+						  				<li><a href="#">Contact</a></li>
+						  				<li><a href="#">News</a></li>
+						  			</ul>
+						  		</nav>
+						</div>
+					</div>
+
+                  </div>
+
+                  <!--- cards -->
+
+                  <div id="Cards" class="col-md-12 col-xs-12 cls-shadow">
+                  		<h1 class="txt-cntr">Cards</h1>
+                  		<div class="">
+	                  	<div class="background">
+							<div class="card">
+								<div class="color" id="blue">
+									<h1>1</h1>
+								</div>
+								<h2>Card1</h2>
+							</div>
+							<div class="card">
+								<div class="color" id="brown">
+								<h1>2</h1>
+								</div>
+								<h2>Card2</h2>
+							</div>
+							<div class="card">
+								<div class="color" id="green">
+								<h1>3</h1>
+								</div>
+								<h2>Card3</h2>
+							</div>
+					</div>
+						<div id="background">
+							<div class="div1">
+							<h2>I am a content!</h2>
+							</div>
+							<div class="div1">
+							</div>
+						</div>
+					</div>
+                  </div>
+
+                  <!--- pannels-->
+
+                  <div  id="Pannels" class="col-md-12 col-xs-12 cls-shadow">
+                  		<div class="pad-cls">
+							<h1 class="txt-cntr">Panels</h1>
+							<h3>Panel Default</h3>
+							<div class="panel panel-default">
+									<div class="panel-heading">Panel Heading</div>
+									<div class="panel-body">Panel default</div>
+							</div>
+							<h3>Panel info</h3>
+							<div class="panel panel-info">
+									<div class="panel-heading">Panel Heading</div>
+									<div class="panel-body">Panel info</div>
+							</div>
+							<h3>Panel Success</h3>
+							<div class="panel panel-success">
+									<div class="panel-heading">Panel Heading</div>
+									<div class="panel-body">Panel success</div>
+							</div>
+							<h3>Panel Primary</h3>
+							<div class="panel panel-primary">
+									<div class="panel-heading">Panel Heading</div>
+									<div class="panel-body">Panel primary</div>
+							</div>
+							<h3>Panel Warning</h3>
+							<div class="panel panel-warning">
+									<div class="panel-heading">Panel Heading</div>
+									<div class="panel-body">Panel warning</div>
+							</div>
+							<h3>Panel Danger</h3>
+							<div class="panel panel-danger">
+									<div class="panel-heading">Panel Heading</div>
+									<div class="panel-body">Panel danger</div>
+							</div>
+						</div>
+
+                  </div>
+
+                  <!--- Toster -->
+
+                 <div  id="Toster" class="col-md-12 col-xs-12 border-shw hgt-toster">
+                 	<div class="pad-cls">
+					<h1 class="txt-cntr">Toastrs</h1>
+					<div id="defaultAlert" class="alert alert-default">
+						<div class="alert-close" onclick="closeAlert('default')">X</div>
+						alert default
+					</div>
+					<div id="infoAlert" class="alert alert-info">
+						<div class="alert-close" onclick="closeAlert('info')">X</div>
+						alert info
+					</div>
+					<div id="primaryAlert" class="alert alert-primary">
+						<div class="alert-close" onclick="closeAlert('primary')">X</div>
+						alert primary
+					</div>
+					<div id="successAlert" class="alert alert-success">
+						<div class="alert-close" onclick="closeAlert('success')">X</div>
+						alert success
+					</div>
+					<div id="warningAlert" class="alert alert-warning">
+						<div class="alert-close" onclick="closeAlert('warning')">X</div>
+						alert warning
+					</div>
+					<div id="dangerAlert" class="alert alert-danger">
+						<div class="alert-close" onclick="closeAlert('danger')">X</div>
+						alert danger
+					</div>
+					</div>
+				</div>
+
 		</div>
 	</div>
 </body>
+<script type="text/javascript">
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+/*-------------------------------------------------*/
+	var slideIndex = 1;
+	showImg(slideIndex);
+	function slideImages(number) {
+	  showImg(slideIndex += number);
+	}
+
+	function showImg(number) {
+	  var elements = document.getElementsByClassName("slides");
+	  if (number > elements.length) {
+	  	slideIndex = 1
+	  }    
+	  if (number < 1) {
+	  		slideIndex = elements.length
+	  	}
+	  var x;
+	  for (x = 0; x < elements.length; x++) {
+	     elements[x].style.display = "none";  
+	  }
+	  elements[slideIndex-1].style.display = "block"  
+}
+
+</script>
 </html>

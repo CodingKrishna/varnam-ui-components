@@ -74,7 +74,13 @@ h1,h2,h3,h4,h5,h6{
     height: 150px;
 }
 .comp-sec{
-    height: 620px;
+    height:  703px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
  }
- 
+ .txt-cntr{
+    text-align:center;
+ }
+ .pad-cls{
+    padding-left: 50px;
+    padding-right: 65px;
+ }
