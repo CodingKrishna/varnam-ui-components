@@ -5,7 +5,6 @@
 	<link rel="stylesheet" type="text/css" href="core.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" type="text/css" href="color.css">
-	<script src="script.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -548,43 +547,5 @@
 		</div>
 	</div>
 </body>
-<script type="text/javascript">
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].onclick = function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  }
-}
-/*-------------------------------------------------*/
-	var slideIndex = 1;
-	showImg(slideIndex);
-	function slideImages(number) {
-	  showImg(slideIndex += number);
-	}
-
-	function showImg(number) {
-	  var elements = document.getElementsByClassName("slides");
-	  if (number > elements.length) {
-	  	slideIndex = 1
-	  }    
-	  if (number < 1) {
-	  		slideIndex = elements.length
-	  	}
-	  var x;
-	  for (x = 0; x < elements.length; x++) {
-	     elements[x].style.display = "none";  
-	  }
-	  elements[slideIndex-1].style.display = "block"  
-}
-
-</script>
+	<script src="main.js"></script>
 </html>
