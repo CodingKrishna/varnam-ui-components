@@ -1,0 +1,39 @@
+
+/*background colors*/
+.red-clr{
+    background: red;
+ }
+ .green-clr{
+    background: green;
+ }
+ .blue-clr{
+    background: blue;
+ }
+ .yellow-clr{
+    background: yellow;
+ }
+ .perple-clr{
+    background:#9c27b0;
+ }
+.black-clr{
+    background: black;
+}
+.disable-clr{
+     background:gainsboro;
+}
+.pink-clr{
+	background: pink;
+}
+/*border colors*/
+.border-clr-navi{
+    border: 2px solid rebeccapurple;
+}
+.border-clr-red{
+   border: 2px solid red;
+} 
+.border-clr-blue{
+   border: 2px solid blue; 
+}
+.border-clr-black{
+   border: 2px solid black; 
+}
