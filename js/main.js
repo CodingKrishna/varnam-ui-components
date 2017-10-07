@@ -19,9 +19,43 @@ function hidePop(){
 }
 
 /*----------------Accordion----------------*/
+var acc = document.getElementsByClassName("accordion");
+var i;
 
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
 
 /*-------------- coursoel -------*/
+var slideIndex = 1;
+	showImg(slideIndex);
+	
+	function slideImages(number) {
+	  showImg(slideIndex += number);
+	}
+
+	function showImg(number) {
+	  var elements = document.getElementsByClassName("slides");
+	  if (number > elements.length) {
+	  	slideIndex = 1
+	  }    
+	  if (number < 1) {
+	  		slideIndex = elements.length
+	  	}
+	  var x;
+	  for (x = 0; x < elements.length; x++) {
+	     elements[x].style.display = "none";  
+	  }
+	  elements[slideIndex-1].style.display = "block"  
+}
 
 
 

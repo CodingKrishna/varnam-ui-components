@@ -7,7 +7,7 @@
 }
 @font-face {
     font-family: roboto-bold;
-    src: url(custom-fonts/Roboto/Roboto-Bold.ttf);
+    src: url(../custom-fonts/Roboto/Roboto-Bold.ttf);
 }
 body{
     font-family: roboto-regular !important;
