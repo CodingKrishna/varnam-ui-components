@@ -116,7 +116,17 @@
     background: rebeccapurple;
     border: none;
 }
-
+.round_btn{
+    width: 90px;
+    height: 40px;
+    background: none;
+    border: 1px solid purple;
+    border-radius: 25px;
+    font-size:18px;
+}
+.back{
+    background-color: plum;
+}
 /*---------------------------------------------tabs styles----------------------------------------*/
 
     .tab-sec{
